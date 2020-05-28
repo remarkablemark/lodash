@@ -1,10 +1,23 @@
 # lodash
 
-[Lodash](https://github.com/lodash/lodash)
+The repository contains [lodash](https://github.com/lodash/lodash) versions:
+
+- 3.10.1
+- 3.10.2
+
+This repository was created because lodash 3.10.1 is vulnerable to [Prototype Pollution](https://snyk.io/vuln/SNYK-JS-LODASH-450202). However, [lodash](https://www.npmjs.com/package/lodash) has not published [3.x.x versions](https://www.npmjs.com/package/lodash/v/3.10.1) to npm in over 5 years.
+
+As a result, for those who cannot upgrade to [4.17.15](https://www.npmjs.com/package/lodash/v/4.17.15) due to breaking changes, a patch for 3.10.2 was created here.
+
+To install lodash@3.10.2:
+
+```sh
+npm install remarkablemark/lodash#3.10.2
+```
 
 ## 3.10.1
 
-[Branch](https://github.com/remarkablemark/lodash/tree/3.10.1):
+The [branch](https://github.com/remarkablemark/lodash/tree/3.10.1) was created by running the following commands:
 
 ```sh
 git clone https://github.com/remarkablemark/lodash.git
@@ -23,7 +36,7 @@ git push origin 3.10.1
 
 ## 3.10.2
 
-[Branch](https://github.com/remarkablemark/lodash/tree/3.10.1) contains [prototype pollution fixes](https://github.com/lodash/lodash/pull/4627/files):
+The [branch](https://github.com/remarkablemark/lodash/tree/3.10.1) addresses [prototype pollution](https://github.com/lodash/lodash/pull/4627/files):
 
 ```sh
 git checkout 3.10.1
