@@ -27,6 +27,10 @@ function baseMerge(object, source, customizer, stackA, stackB) {
       props = isSrcArr ? undefined : keys(source);
 
   arrayEach(props || source, function(srcValue, key) {
+    if (srcValue === '__proto__' || srcValue === 'constructor') {
+      return;
+    }
+
     if (props) {
       key = srcValue;
       srcValue = source[key];

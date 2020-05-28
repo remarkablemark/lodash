@@ -40,6 +40,10 @@ function set(object, path, value) {
 
   while (nested != null && ++index < length) {
     var key = path[index];
+    if (key === '__proto__' || key === 'constructor') {
+      continue;
+    }
+
     if (isObject(nested)) {
       if (index == lastIndex) {
         nested[key] = value;
