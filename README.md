@@ -8,6 +8,7 @@
 
 ```sh
 git clone https://github.com/remarkablemark/lodash.git
+cd lodash
 git checkout --orphan 3.10.1-post
 git rm -rf .
 rm package-lock.json
