@@ -52,5 +52,5 @@
   "scripts": {
     "test": "echo \"See https://travis-ci.org/lodash/lodash-cli for testing details.\""
   },
-  "version": "3.10.1"
+  "version": "3.10.2"
 }
